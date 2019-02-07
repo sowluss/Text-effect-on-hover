@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #01252a;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.text {
+  color: #9d8221;
+  font-size: 70px;
+  font-family: sans-serif;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.hidden {
+  max-width: 0;
+  opacity: 0;
+  transition: .5s ease-in;
+}
+
+.text:hover .hidden {
+  opacity: 1;
+  max-width: 1em;
+}
+
+.letter {
+  color: #ffa900;
+}
